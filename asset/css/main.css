@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+/* Scroll Menu */
+.scroll-samping{
+    overflow-x: scroll;
+    white-space: nowrap;
+    /* Hide Scrollbar IE, Edge, Firefox */
+    /* -ms-overflow-style: none; IE & Edge */
+    /* scrollbar-width: none; Firefox */
+}
+
+/* .scroll-samping::-webkit-scrollbar{ */
+    /* Hide Scrollbar Chrome, Safari, Opera */
+    /* display: none; */
+/* } */
+/* END Scroll Menu */
+
+.text-right {
+    text-align: right;
+}
+
+.content-right {
+    position: relative;
+    right: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+
+header .info-nav {
+    background-color: #146C94;
+    color: aliceblue;
+    padding: 10px 0px;
+    font-size: 12px;
+}
+
+header a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header nav {
+    background-color: #F6F1F1;
+    padding: 20px
+}
+
+header nav a {
+    color: #146C94;
+    padding: 0px 20px;
+}
+
+header nav .menu-wrap {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+header nav .menu a{
+    padding: 0px 10px;
+}
+
+header nav .menu a:hover {
+    background-color: #19A7CE;
+    color: aliceblue;
+    border-radius: 20px 30px;
+    padding: 20px;
+}
+
+.button-order {
+    background-color: #27ba4e;
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 20px 30px;
+}
+
+.banner {
+    margin-top: 140px;
+}
+
+.card {
+    display: inline-block;
+    margin: 10px;
+    width: 350px;
+    border-radius: 20px 30px;
+    border: none;
+}
