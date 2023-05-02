@@ -40,9 +40,10 @@ body {
 header {
     position: fixed;
     top: 0;
-    right: 0;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%);
     z-index: 99;
+    width: 70%;
 }
 
 header a {
@@ -53,6 +54,7 @@ header a {
 header nav {
     background-color: transparent;
     padding: 20px;
+    border-radius: 50px 25px;
     transition: 0.2s;
 }
 
@@ -71,8 +73,7 @@ header nav .menu a{
 }
 
 header nav .menu a:hover {
-    background-color: #19A7CE;
-    color: aliceblue;
+    color: rgb(16, 16, 16);
     border-radius: 20px 30px;
     padding: 20px;
 }
@@ -81,13 +82,50 @@ header nav .menu a:hover {
     background-color: #27ba4e;
     color: aliceblue;
     padding: 10px 20px;
-    border-radius: 20px 30px;
+    border-radius: 20px 10px;
+    transition: .25s;
+}
+
+.button-order:hover {
+    outline: 4px solid #27ba4e;
+    outline-offset: 4px;
 }
 
 .card {
     display: inline-block;
-    margin: 10px;
+    margin: 10px 2px;
     width: 350px;
     border-radius: 20px 30px;
     border: none;
+}
+
+.featured {
+    position: relative;
+}
+
+.featured-wrap {
+    padding-top: 50px;
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.featured-wrap img {
+    display: block;
+    margin: auto;
+    z-index: 99;
+    position: relative;
+}
+
+.stage {
+    position: relative;
+    top: -120px;
+    width: 80%;
+    height: 130px;
+    background: rgb(190,160,140);
+    background: linear-gradient(0deg, rgba(190,160,140,1) 17%, rgba(241,219,201,1) 65%);
+    margin: auto;
+    border-radius: 50%;
+    outline: 4px solid rgba(190,160,140,1);
+    outline-offset: 5px;
 }

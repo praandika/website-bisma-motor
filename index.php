@@ -10,6 +10,7 @@
         include('component/header.html');
         include('component/banner.html');
         include('component/product-list.html');
+        include('component/featured.html');
         include('component/script.html');
     ?>
 </body>

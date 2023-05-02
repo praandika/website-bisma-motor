@@ -1,2 +1,16 @@
 <script src="asset/js/bootstrap.bundle.min.js"></script>
 <script src="asset/js/main.js"></script>
+<script src="asset/js/jquery.min.js"></script>
+<script src="asset/owl/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            center: true,
+            loop:true,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true
+        });
+    });
+</script>
