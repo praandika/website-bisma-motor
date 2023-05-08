@@ -11,6 +11,7 @@
         include('component/banner.html');
         include('component/product-list.html');
         include('component/featured.html');
+        include('component/footer.html');
         include('component/script.html');
     ?>
 </body>
