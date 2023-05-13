@@ -42,7 +42,7 @@ header {
     top: 0;
     left: 50%;
     transform: translate(-50%);
-    z-index: 99;
+    z-index: 999;
     width: 70%;
 }
 
@@ -65,7 +65,7 @@ header nav a {
 
 header nav .menu-wrap {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 header nav .menu a{
@@ -81,9 +81,10 @@ header nav .menu a:hover {
 .button-order {
     background-color: #27ba4e;
     color: aliceblue;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 20px 10px;
     transition: .25s;
+    font-size: 15px;
 }
 
 .button-order:hover {
@@ -128,4 +129,102 @@ header nav .menu a:hover {
     border-radius: 50%;
     outline: 4px solid rgba(190,160,140,1);
     outline-offset: 5px;
+}
+
+.partner-wrap {
+    margin-top: 45px;
+    padding: 0 5px;
+}
+
+.credit {
+    text-align: center;
+}
+
+.contact-widget {
+    position: fixed;
+    left: 0;
+    top: 430px;
+    height: 200px;
+    text-align: center;
+}
+
+.contact-widget a.contact {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15px;
+    width: 50px;
+    transition: 0.2s ease;
+}
+
+.instagram {
+    background-color: #e17ce1;
+    border-radius: 0 20px 0 0;
+}
+
+.facebook {
+    background-color: #6b8ae0;
+}
+
+.youtube {
+    background-color: #ed7474;
+}
+
+.whatsapp {
+    background-color: #73d98e;
+    border-radius: 0 0 20px 0;
+}
+
+.instagram:hover {
+    background-color: #e22fe2;
+}
+
+.facebook:hover {
+    background-color: #2653ce;
+}
+
+.youtube:hover {
+    background-color: #c42929;
+}
+
+.whatsapp:hover {
+    background-color: #1ac848;
+}
+
+.marketplace {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    z-index: 99;
+}
+
+.marketplace span {
+    padding: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.marketplace img {
+    width: 70px;
+}
+
+.marketplace a {
+    display: block;
+    width: 130px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.tokopedia {
+    background-color: #1ac848;
+}
+
+.blibli {
+    background-color: #208aed;
+    padding: 30px 0;
 }
