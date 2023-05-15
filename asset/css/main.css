@@ -344,11 +344,22 @@ header nav .menu a:hover {
 
 .tokopedia {
     background-color: #1ac848;
+    padding: 5px 0;
+    transition: 0.5s ease-in-out;
+}
+
+.tokopedia:hover {
+    width: 180px;
 }
 
 .blibli {
     background-color: #208aed;
     padding: 30px 0;
+    transition: 0.5s ease-in-out;
+}
+
+.blibli:hover {
+    width: 180px;
 }
 
 .sales {
