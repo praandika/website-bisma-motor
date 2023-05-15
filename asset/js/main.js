@@ -5,14 +5,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("navigation").style.backgroundColor = "#ffffff";
-        for (let i = 0; i < document.getElementsByClassName("menulist").length; i++) {
-            document.getElementsByClassName("menulist")[i].style.color = "#19A7CE";
-        }
+        document.getElementById("navigation").setAttribute("class", "header-scroll");
     } else {
-        document.getElementById("navigation").style.backgroundColor = "transparent";
-        for (let i = 0; i < document.getElementsByClassName("menulist").length; i++) {
-            document.getElementsByClassName("menulist")[i].style.color = "#ffffff";
-        }
+        document.getElementById("navigation").removeAttribute("class");
     }
 }

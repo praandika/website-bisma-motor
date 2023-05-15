@@ -11,6 +11,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     position: relative;
+    background-color: #ffffff;
 }
 
 /* Scroll Menu */
@@ -54,8 +55,8 @@ header a {
 header nav {
     background-color: transparent;
     padding: 20px;
-    border-radius: 50px 25px;
-    transition: 0.2s;
+    border-radius: 0 0 50px 50px;
+    transition: 0.5s;
 }
 
 header nav a {
@@ -70,12 +71,24 @@ header nav .menu-wrap {
 
 header nav .menu a{
     padding: 0px 10px;
+    transition: 0.5s ease-in-out;
 }
 
 header nav .menu a:hover {
-    color: rgb(16, 16, 16);
-    border-radius: 20px 30px;
+    color: #EB455F;
+}
+
+.header-scroll {
+    background-color: #ffffff;
     padding: 20px;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0px 2px 70px -40px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+
+.header-scroll .menu a {
+    color: #3A98B9;
+    text-decoration: none;
 }
 
 .button-order {
@@ -100,8 +113,42 @@ header nav .menu a:hover {
     border: none;
 }
 
+.card-title {
+    height: 110px;
+    background-color: #146C94;
+    color: #ffffff;
+    padding: 18px 15px 10px;
+    position: relative;
+}
+
+.card-title .harga {
+    display: inline-block;
+    position: absolute;
+    right: -5px;
+    top: -15px;
+    height: 30px;
+    width: 170px;
+    padding-top: 4px;
+    border-radius: 0 50px 0 50px;
+    background-color: #EB455F;
+    font-weight: bold;
+    text-align: center;
+    outline: 3px dashed #f26b7f;
+    outline-offset: 4px;
+}
+
 .featured {
     position: relative;
+
+    /* The image used */
+    background-image: url('../../img/parallax4.png');
+    height: min-content;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .featured-wrap {
@@ -123,17 +170,87 @@ header nav .menu a:hover {
     top: -120px;
     width: 80%;
     height: 130px;
-    background: rgb(190,160,140);
-    background: linear-gradient(0deg, rgba(190,160,140,1) 17%, rgba(241,219,201,1) 65%);
+    background: rgb(183, 183, 183);
+    background: linear-gradient(0deg, rgb(183, 183, 183) 17%, rgb(225, 225, 225) 65%);
     margin: auto;
     border-radius: 50%;
-    outline: 4px solid rgba(190,160,140,1);
+    outline: 4px solid rgb(122, 122, 122);
     outline-offset: 5px;
 }
 
 .partner-wrap {
     margin-top: 45px;
     padding: 0 5px;
+}
+
+.pulse {
+    animation: pulse-animation 0.5s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(255, 0, 0, 0.431);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+.pulse-btn {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #d11833;
+    outline: 3px solid #f26b7f;
+    outline-offset: 3px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+#smartKey {
+    top: 240px;
+    left: 565px;
+}
+
+#luggage {
+    top: 250px;
+    left: 365px;
+}
+
+#smartFrontRefuel {
+    top: 270px;
+    left: 565px;
+}
+
+#blueCore {
+    top: 385px;
+    left: 395px;
+}
+
+#seat {
+    top: 220px;
+    left: 465px;
+}
+
+#led {
+    top: 120px;
+    left: 625px;
+}
+
+#footstep {
+    top: 350px;
+    left: 370px;
+}
+
+#tire {
+    top: 450px;
+    left: 755px;
+}
+
+#speedo {
+    top: 105px;
+    left: 570px;
 }
 
 .credit {
@@ -146,6 +263,7 @@ header nav .menu a:hover {
     top: 430px;
     height: 200px;
     text-align: center;
+    z-index: 99;
 }
 
 .contact-widget a.contact {
@@ -203,6 +321,10 @@ header nav .menu a:hover {
     padding: 8px;
     font-size: 18px;
     font-weight: bold;
+    background-color: #EB455F;
+    color: #ffffff;
+    border-radius: 20px;
+    display: inline-block;
 }
 
 .marketplace img {
@@ -227,4 +349,76 @@ header nav .menu a:hover {
 .blibli {
     background-color: #208aed;
     padding: 30px 0;
+}
+
+.sales {
+    padding: 50px 0;
+    text-align: center;
+
+    background-color: #ffffff;
+}
+
+.sales img {
+    width: 250px;
+}
+
+.sales-wrap {
+    position: relative;
+}
+
+.sales-wrap .nomor {
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #146C94;
+    outline: 3px solid #19A7CE;
+    outline-offset: 4px;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px 50px 0 50px;
+}
+
+.sales .name {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #AFD3E2;
+    width: 100px;
+    height: 35px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    color: #146C94;
+    border-radius: 0 0 20px 20px;
+}
+
+.sales a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #146C94;
+    background-image: url("../../img/45-degree-fabric-dark.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+    padding: 50px 0;
+}
+
+footer img {
+    border-radius: 20px;
+}
+
+.credit {
+    padding: 18px 8px 5px 8px;
+    color: #ffffff;
+
+    background-color: #000000;
+    background-image: url("../../img/xv.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
