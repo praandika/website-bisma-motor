@@ -253,8 +253,85 @@ header nav .menu a:hover {
     left: 570px;
 }
 
-.credit {
-    text-align: center;
+.popup {
+    position: absolute;
+    width: 250px;
+    height: min-content;
+    background-color: #101010db;
+    border-radius: 50px;
+    -webkit-box-shadow: 10px 10px 38px -23px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 38px -23px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 38px -23px rgba(0,0,0,0.75);
+    color: #ffffff;
+    font-size: 10px;
+    z-index: 99;
+}
+
+.popup img {
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+}
+
+.popup .description {
+    padding: 10px 15px;
+}
+
+.popup .description p {
+    text-justify: inter-word;
+}
+
+.popup .title {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+#smartKeyContent {
+    top: 100px;
+    left: 595px;
+}
+
+#luggageContent {
+    top: 100px;
+    left: 100px;
+}
+
+#smartFrontRefuelContent {
+    top: 170px;
+    left: 595px;
+}
+
+#blueCoreContent {
+    top: 250px;
+    left: 130px;
+}
+
+#seatContent {
+    top: 10px;
+    left: 200px;
+}
+
+#ledContent {
+    top: 5px;
+    left: 660px;
+}
+
+#footstepContent {
+    top: 250px;
+    left: 100px;
+}
+
+#tireContent {
+    top: 330px;
+    left: 790px;
+}
+
+#speedoContent {
+    top: 10px;
+    left: 600px;
 }
 
 .contact-widget {
@@ -270,9 +347,19 @@ header nav .menu a:hover {
     display: block;
     text-align: center;
     font-size: 25px;
-    padding-top: 15px;
+    padding-top: 5px;
     width: 50px;
+    text-decoration: none;
     transition: 0.2s ease;
+}
+
+.contact-widget a:hover {
+    width: 180px;
+    text-align: right;
+    padding-top: 0;
+    padding-right: 15px;
+    padding-left: 5px;
+    border-radius: 0 50px 50px 0;
 }
 
 .instagram {
@@ -297,16 +384,40 @@ header nav .menu a:hover {
     background-color: #e22fe2;
 }
 
+.instagram:hover::before {
+    content: 'Instagram';
+    font-size: 25px;
+    color: #ffffff;
+}
+
 .facebook:hover {
     background-color: #2653ce;
+}
+
+.facebook:hover::before {
+    content: 'Facebook';
+    font-size: 25px;
+    color: #ffffff;
 }
 
 .youtube:hover {
     background-color: #c42929;
 }
 
+.youtube:hover::before {
+    content: 'Youtube';
+    font-size: 25px;
+    color: #ffffff;
+}
+
 .whatsapp:hover {
-    background-color: #1ac848;
+    background-color: #17aa3e;
+}
+
+.whatsapp:hover::before {
+    content: 'Whatsapp';
+    font-size: 25px;
+    color: #ffffff;
 }
 
 .marketplace {
@@ -428,6 +539,7 @@ footer img {
 .credit {
     padding: 18px 8px 5px 8px;
     color: #ffffff;
+    text-align: center;
 
     background-color: #000000;
     background-image: url("../../img/xv.png");
