@@ -208,6 +208,12 @@ header nav .menu a:hover {
     cursor: pointer;
 }
 
+.contentFeatured {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 #smartKey {
     top: 240px;
     left: 565px;
@@ -544,4 +550,105 @@ footer img {
     background-color: #000000;
     background-image: url("../../img/xv.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+/* Transition */
+.fadeInAtas{
+    animation-name: fadeInAtas;
+    animation-duration: 1s;
+}
+
+.fadeInKiri{
+    animation-name: fadeInKiri;
+    animation-duration: 1s;
+}
+
+.fadeInKanan{
+    animation-name: fadeInKanan;
+    animation-duration: 1s;
+}
+
+.fadeInBawah{
+    animation-name: fadeInBawah;
+    animation-duration: 1s;
+}
+
+.fadeIn{
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+@keyframes fadeInAtas {
+    from{
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInKiri {
+    from{
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInKanan {
+    from{
+        opacity: 0;
+        transform: translateX(25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInBawah {
+    from{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+/* End Transition */
+
+@media screen and (max-width: 2560px) {
+    .contentFeatured {
+        position: absolute;
+        top: 0;
+        left: 110px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .contentFeatured {
+        position: absolute;
+        top: 0;
+        left: -170px;
+    }
 }
