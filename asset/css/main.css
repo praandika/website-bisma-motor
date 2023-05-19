@@ -631,15 +631,13 @@ footer img {
 }
 /* End Transition */
 
-@media screen and (max-width: 2560px) {
-    .contentFeatured {
-        position: absolute;
-        top: 0;
-        left: 220px;
-    }
+.contentFeatured {
+    position: absolute;
+    top: 0;
+    left: 110px;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px){
     .contentFeatured {
         position: absolute;
         top: 0;
@@ -756,7 +754,165 @@ footer img {
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 768px) {
+    .contentFeatured {
+        position: absolute;
+        top: 0;
+        left: -260px;
+    }
+
+    #smartKey {
+        top: 180px;
+        left: 470px;
+    }
+    
+    #luggage {
+        top: 190px;
+        left: 340px;
+    }
+    
+    #smartFrontRefuel {
+        top: 210px;
+        left: 470px;
+    }
+    
+    #blueCore {
+        top: 275px;
+        left: 355px;
+    }
+    
+    #seat {
+        top: 165px;
+        left: 400px;
+    }
+    
+    #led {
+        top: 100px;
+        left: 515px;
+    }
+    
+    #footstep {
+        top: 250px;
+        left: 340px;
+    }
+    
+    #tire {
+        top: 315px;
+        left: 605px;
+    }
+    
+    #speedo {
+        top: 90px;
+        left: 480px;
+    }
+
+    #smartKeyContent {
+        top: 100px;
+        left: 500px;
+    }
+    
+    #luggageContent {
+        top: 100px;
+        left: 80px;
+    }
+    
+    #smartFrontRefuelContent {
+        top: 170px;
+        left: 500px;
+    }
+    
+    #blueCoreContent {
+        top: 200px;
+        left: 90px;
+    }
+    
+    #seatContent {
+        top: 10px;
+        left: 135px;
+    }
+    
+    #ledContent {
+        top: 5px;
+        left: 550px;
+    }
+    
+    #footstepContent {
+        top: 190px;
+        left: 75px;
+    }
+    
+    #tireContent {
+        top: 200px;
+        left: 335px;
+    }
+    
+    #speedoContent {
+        top: 10px;
+        left: 510px;
+    }
+
+    .sales img {
+        width: 150px;
+    }
+
+    .sales .nomor {
+        font-size: 15px;
+    }
+
+    .sales .name {
+        margin-top: 11px;
+        font-size: 18px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    footer iframe {
+        height: 200px;
+    }
+
+    footer .partner-wrap {
+        margin-top: 20px;
+        padding: 0 5px;
+    }
+
+    .card {
+        display: inline-block;
+        margin: 10px 2px;
+        width: 220px;
+        border-radius: 20px 30px;
+        border: none;
+    }
+    
+    .card-title {
+        font-size: 12px;
+    }
+    
+    .card-title .harga {
+        display: inline-block;
+        position: absolute;
+        right: -3px;
+        top: -20px;
+        font-size: 14px;
+    }
+
+    .marketplace span {
+        font-size: 15px;
+    }
+    
+    .marketplace img {
+        width: 50px;
+    }
+    
+    .marketplace a {
+        width: 120px;
+        font-size: 15px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
     .contentFeatured {
         position: absolute;
         top: 0;
