@@ -208,55 +208,49 @@ header nav .menu a:hover {
     cursor: pointer;
 }
 
-.contentFeatured {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 #smartKey {
     top: 240px;
-    left: 565px;
+    left: 455px;
 }
 
 #luggage {
     top: 250px;
-    left: 365px;
+    left: 255px;
 }
 
 #smartFrontRefuel {
     top: 270px;
-    left: 565px;
+    left: 455px;
 }
 
 #blueCore {
     top: 385px;
-    left: 395px;
+    left: 285px;
 }
 
 #seat {
     top: 220px;
-    left: 465px;
+    left: 355px;
 }
 
 #led {
     top: 120px;
-    left: 625px;
+    left: 515px;
 }
 
 #footstep {
     top: 350px;
-    left: 370px;
+    left: 260px;
 }
 
 #tire {
     top: 450px;
-    left: 755px;
+    left: 645px;
 }
 
 #speedo {
     top: 105px;
-    left: 570px;
+    left: 460px;
 }
 
 .popup {
@@ -297,47 +291,47 @@ header nav .menu a:hover {
 
 #smartKeyContent {
     top: 100px;
-    left: 595px;
+    left: 485px;
 }
 
 #luggageContent {
     top: 100px;
-    left: 100px;
+    left: -10px;
 }
 
 #smartFrontRefuelContent {
     top: 170px;
-    left: 595px;
+    left: 485px;
 }
 
 #blueCoreContent {
     top: 250px;
-    left: 130px;
+    left: 20px;
 }
 
 #seatContent {
     top: 10px;
-    left: 200px;
+    left: 90px;
 }
 
 #ledContent {
     top: 5px;
-    left: 660px;
+    left: 550px;
 }
 
 #footstepContent {
     top: 250px;
-    left: 100px;
+    left: -10px;
 }
 
 #tireContent {
     top: 330px;
-    left: 790px;
+    left: 680px;
 }
 
 #speedoContent {
     top: 10px;
-    left: 600px;
+    left: 490px;
 }
 
 .contact-widget {
@@ -641,7 +635,7 @@ footer img {
     .contentFeatured {
         position: absolute;
         top: 0;
-        left: 110px;
+        left: 220px;
     }
 }
 
@@ -649,6 +643,273 @@ footer img {
     .contentFeatured {
         position: absolute;
         top: 0;
+        left: -60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contentFeatured {
+        position: absolute;
+        top: -15px;
         left: -170px;
+    }
+
+    #smartKey {
+        top: 240px;
+        left: 455px;
+    }
+    
+    #luggage {
+        top: 250px;
+        left: 255px;
+    }
+    
+    #smartFrontRefuel {
+        top: 270px;
+        left: 455px;
+    }
+    
+    #blueCore {
+        top: 375px;
+        left: 300px;
+    }
+    
+    #seat {
+        top: 220px;
+        left: 355px;
+    }
+    
+    #led {
+        top: 130px;
+        left: 515px;
+    }
+    
+    #footstep {
+        top: 340px;
+        left: 280px;
+    }
+    
+    #tire {
+        top: 440px;
+        left: 630px;
+    }
+    
+    #speedo {
+        top: 115px;
+        left: 460px;
+    }
+
+    header nav .menu-wrap {
+        margin-top: 8px;
+        font-size: 15px;
+    }
+
+    .button-order {
+        background-color: #27ba4e;
+        color: aliceblue;
+        padding: 10px 10px;
+        border-radius: 20px 10px;
+        transition: .25s;
+        font-size: 10px;
+    }
+
+    .card {
+        display: inline-block;
+        margin: 10px 2px;
+        width: 300px;
+        border-radius: 20px 30px;
+        border: none;
+    }
+    
+    .card-title {
+        height: 100px;
+        background-color: #146C94;
+        color: #ffffff;
+        padding: 16px 13px 8px;
+        position: relative;
+        font-size: 15px;
+    }
+    
+    .card-title .harga {
+        display: inline-block;
+        position: absolute;
+        right: -3px;
+        top: -18px;
+        height: 30px;
+        width: 170px;
+        padding-top: 4px;
+        border-radius: 0 50px 0 50px;
+        background-color: #EB455F;
+        font-weight: bold;
+        text-align: center;
+        outline: 3px dashed #f26b7f;
+        outline-offset: 4px;
+    }
+
+    .sales-wrap .nomor {
+        font-size: 14px;
+    }
+    
+    .sales .name {
+        margin-top: 6px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .contentFeatured {
+        position: absolute;
+        top: 0;
+        left: -260px;
+    }
+
+    #smartKey {
+        top: 180px;
+        left: 470px;
+    }
+    
+    #luggage {
+        top: 190px;
+        left: 340px;
+    }
+    
+    #smartFrontRefuel {
+        top: 210px;
+        left: 470px;
+    }
+    
+    #blueCore {
+        top: 275px;
+        left: 355px;
+    }
+    
+    #seat {
+        top: 165px;
+        left: 400px;
+    }
+    
+    #led {
+        top: 100px;
+        left: 515px;
+    }
+    
+    #footstep {
+        top: 250px;
+        left: 340px;
+    }
+    
+    #tire {
+        top: 315px;
+        left: 605px;
+    }
+    
+    #speedo {
+        top: 90px;
+        left: 480px;
+    }
+
+    #smartKeyContent {
+        top: 100px;
+        left: 500px;
+    }
+    
+    #luggageContent {
+        top: 100px;
+        left: 80px;
+    }
+    
+    #smartFrontRefuelContent {
+        top: 170px;
+        left: 500px;
+    }
+    
+    #blueCoreContent {
+        top: 200px;
+        left: 90px;
+    }
+    
+    #seatContent {
+        top: 10px;
+        left: 135px;
+    }
+    
+    #ledContent {
+        top: 5px;
+        left: 550px;
+    }
+    
+    #footstepContent {
+        top: 190px;
+        left: 75px;
+    }
+    
+    #tireContent {
+        top: 200px;
+        left: 335px;
+    }
+    
+    #speedoContent {
+        top: 10px;
+        left: 510px;
+    }
+
+    .sales img {
+        width: 150px;
+    }
+
+    .sales .nomor {
+        font-size: 15px;
+    }
+
+    .sales .name {
+        margin-top: 11px;
+        font-size: 18px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    footer iframe {
+        height: 200px;
+    }
+
+    footer .partner-wrap {
+        margin-top: 20px;
+        padding: 0 5px;
+    }
+
+    .card {
+        display: inline-block;
+        margin: 10px 2px;
+        width: 220px;
+        border-radius: 20px 30px;
+        border: none;
+    }
+    
+    .card-title {
+        font-size: 12px;
+    }
+    
+    .card-title .harga {
+        display: inline-block;
+        position: absolute;
+        right: -3px;
+        top: -20px;
+        font-size: 14px;
+    }
+
+    .marketplace span {
+        font-size: 15px;
+    }
+    
+    .marketplace img {
+        width: 50px;
+    }
+    
+    .marketplace a {
+        width: 120px;
+        font-size: 15px;
+        margin: 10px;
     }
 }
