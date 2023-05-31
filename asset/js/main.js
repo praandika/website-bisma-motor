@@ -1,6 +1,7 @@
 // When the user scrolls down 50px from the top of the document, change the header's color
 window.onscroll = function () {
-    scrollFunction()
+    scrollFunction();
+    scrollFunctionMobile();
 };
 
 function scrollFunction() {
@@ -8,6 +9,14 @@ function scrollFunction() {
         document.getElementById("navigation").setAttribute("class", "header-scroll");
     } else {
         document.getElementById("navigation").removeAttribute("class");
+    }
+}
+
+function scrollFunctionMobile() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("mobileHeader").setAttribute("class", "header-scroll-mobile");
+    } else {
+        document.getElementById("mobileHeader").removeAttribute("class");
     }
 }
 
