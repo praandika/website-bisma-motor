@@ -109,3 +109,15 @@ function hideSpeedo() {
     let item = document.getElementById("speedoContent");
     item.classList.add("class", "hide");
 }
+
+function showBuble() {
+    let item = document.querySelectorAll("sales-buble");
+    for (let i = 0; i < item.length; i++) {
+        item[i].classList.remove("hide");
+    }
+}
+
+function hideBuble() {
+    let item = document.querySelectorAll("sales-buble");
+    item.classList.add("class", "hide");
+}
