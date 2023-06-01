@@ -79,7 +79,10 @@ header nav .menu a:hover {
 }
 
 .header-scroll {
+    /* background-color: #ffffff; */
     background-color: #ffffff;
+    background-image: url("../../img/xv.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     padding: 20px;
     border-radius: 0 0 50px 50px;
     box-shadow: 0px 2px 70px -40px rgba(0,0,0,0.75);
@@ -186,6 +189,7 @@ header nav .menu a:hover {
     color: #ffffff;
     padding: 18px 15px 10px;
     position: relative;
+    word-wrap: break-word;
 }
 
 .card-title .harga {
@@ -516,9 +520,7 @@ header nav .menu a:hover {
     position: fixed;
     right: 0;
     bottom: 80px;
-    width: 50px;
-    border-radius: 50px 0 0 50px;
-    background-color: #17aa3e;
+    z-index: 999;
 }
 
 .contact-widget-mobile a {
@@ -527,9 +529,14 @@ header nav .menu a:hover {
     color: #ffffff;
 }
 
-.sales-buble {
+.sales-buble-wrap {
     position: fixed;
     right: 5px;
+    bottom: 285px;
+    z-index: 999;
+}
+
+.sales-buble {
     width: 50px;
     height: 50px;
     background-color: #ffffff;
@@ -537,7 +544,7 @@ header nav .menu a:hover {
     border: 1px solid #208aed;
     outline: 1px solid #EB455F;
     outline-offset: 2px;
-    z-index: 999;
+    margin-top: 10px;
 }
 
 .sales-buble img {
@@ -548,36 +555,32 @@ header nav .menu a:hover {
     text-decoration: none;
 }
 
-#sales1 {
-    bottom: 255px;
+.whatsapp-mobile {
+    background-color: #17aa3e;
+    width: 50px;
+    border-radius: 50px 0 0 50px;
+    margin-top: 5px;
 }
 
-#sales2 {
-    bottom: 195px;
+.instagram-mobile {
+    background-color: #ff21ff;
+    width: 50px;
+    border-radius: 50px 0 0 50px;
+    margin-top: 5px;
 }
 
-#sales3 {
-    bottom: 135px;
+.facebook-mobile {
+    background-color: #1c4ccf;
+    width: 50px;
+    border-radius: 50px 0 0 50px;
+    margin-top: 5px;
 }
 
-.contact-widget-mobile .instagram {
-    background-color: #e17ce1;
-}
-
-.contact-widget-mobile .facebook {
-    background-color: #6b8ae0;
-}
-
-.contact-widget-mobile .youtube {
-    background-color: #ed7474;
-}
-
-.contact-widget-mobile .whatsapp {
-    background-color: #73d98e;
-}
-
-.contact-widget-mobile .instagram:hover {
-    background-color: #e22fe2;
+.youtube-mobile {
+    background-color: #cb0c0c;
+    width: 50px;
+    border-radius: 50px 0 0 50px;
+    margin-top: 5px;
 }
 
 .marketplace {
@@ -786,6 +789,11 @@ footer .partner-mobile {
     animation-duration: 3s;
 }
 
+.fadeOut{
+    animation-name: fadeOut;
+    animation-duration: 3s;
+}
+
 @keyframes fadeInAtas {
     from{
         opacity: 0;
@@ -841,6 +849,16 @@ footer .partner-mobile {
 
     to{
         opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
     }
 }
 /* End Transition */

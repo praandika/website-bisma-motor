@@ -1,3 +1,11 @@
+@media screen and (max-width: 1920px) and (min-width: 1920px) {
+    .contentFeatured {
+        position: absolute;
+        top: 0;
+        left: 60px;
+    }
+}
+
 @media screen and (max-width: 1440px){
     .contentFeatured {
         position: absolute;
@@ -405,6 +413,81 @@
 
     .credit {
         font-size: 12px;
+        padding-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 180px;
+    }
+    
+    .card-title {
+        font-size: 12px;
+    }
+    
+    .card-title .harga {
+        top: -10px;
+        font-size: 12px;
+        height: 20px;
+        width: 150px;
+        outline: 2px dashed #f26b7f;
+        outline-offset: 3px;
+        padding-top: 2px;
+    }
+
+    .credit {
+        font-size: 10px;
+        padding-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card {
+        width: 150px;
+    }
+    
+    .card-title {
+        font-size: 12px;
+    }
+    
+    .card-title .harga {
+        right: 10px;
+        font-size: 11px;
+        width: 130px;
+    }
+
+    .featured-mobile .title {
+        font-size: 12px;
+    }
+
+    .sales img {
+        width: 120px;
+    }
+
+    .sales-wrap .nomor {
+        font-size: 12px;
+        width: 180px;
+        height: 25px;
+        padding-top: 4px;
+        outline: 2px solid #19A7CE;
+        outline-offset: 3px;
+    }
+    
+    .sales .name {
+        margin-top: 10px;
+        font-size: 18px;
+        width: 80px;
+        height: 25px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    footer .partner-mobile img {
+        width: 130px;
+    }
+
+    .credit {
+        font-size: 9px;
         padding-bottom: 70px;
     }
 }

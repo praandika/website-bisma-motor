@@ -111,13 +111,8 @@ function hideSpeedo() {
 }
 
 function showBuble() {
-    let item = document.querySelectorAll("sales-buble");
+    let item = document.querySelectorAll(".sales-buble");
     for (let i = 0; i < item.length; i++) {
-        item[i].classList.remove("hide");
+        item[i].classList.toggle("hide");
     }
-}
-
-function hideBuble() {
-    let item = document.querySelectorAll("sales-buble");
-    item.classList.add("class", "hide");
 }
