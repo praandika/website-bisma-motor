@@ -175,6 +175,16 @@ header nav .menu a:hover {
     outline-offset: 4px;
 }
 
+.banner-primary {
+    border-bottom: 8px solid #146C94;
+}
+
+.product-list h2 {
+    color: #146C94;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
 .card {
     display: inline-block;
     margin: 10px 2px;
@@ -618,6 +628,7 @@ header nav .menu a:hover {
 
 .marketplace-mobile {
     display: none;
+    z-index: 999;
 }
 
 .tokopedia {
